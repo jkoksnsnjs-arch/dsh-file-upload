@@ -1,0 +1,25 @@
+{
+  "name": "@local/dsh-paste-files",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Codex-like file upload for dsh chat: attach button, paste/drop, file chips, file manager, and scheduled cleanup.",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-api-remotes"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

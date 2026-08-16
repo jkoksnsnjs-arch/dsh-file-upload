@@ -1,0 +1,13 @@
+{
+  "name": "@local/dsh-document-reader",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "read_document tool: extract text from PDF, Word, Excel, PowerPoint and other document files.",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT"
+}
